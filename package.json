@@ -1,0 +1,8 @@
+{
+  "name": "web-arkia911",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes live-server --port=3000"
+  }
+}
