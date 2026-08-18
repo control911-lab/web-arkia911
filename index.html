@@ -12,8 +12,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARKIA911 | Diseño y fabricación de muebles modulares en Bogotá</title>
-    <meta name="description" content="Diseñamos y fabricamos cocinas, closets, muebles de TV y baños modulares a medida en Bogotá. Medición y diseño 3D sin costo, garantía escrita. ¡Cotiza por WhatsApp!">
-    <meta name="keywords" content="muebles modulares Bogotá, cocinas modulares, closets a medida, muebles de TV, muebles de baño, ARKIA911">
+    <meta name="description" content="Diseñamos y fabricamos cocinas, closets, muebles de TV y baños modulares a medida.">
+    <meta name="keywords" content="muebles modulares ricaurte, cundinamarca, girardot, Bogotá, cocinas modulares, closets a medida, muebles de TV, muebles de baño, ARKIA911">
     <meta name="author" content="ARKIA911">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.tudominio.com/">
@@ -157,6 +157,20 @@
         .gallery-item .g-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,.65)); color: #fff; font-weight: 600; font-size: 15px; padding: 30px 15px 12px; text-align: center; }
         .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+        /* Carrusel */
+        .carousel { position: relative; max-width: 950px; margin: 0 auto; overflow: hidden; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,.12); }
+        .carousel-track { display: flex; transition: transform .5s ease; }
+        .slide { min-width: 100%; position: relative; }
+        .slide img { width: 100%; height: 500px; object-fit: cover; display: block; }
+        .slide-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,.65)); color: #fff; font-weight: 600; font-size: 16px; padding: 40px 20px 16px; }
+        .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border: none; border-radius: 50%; background: rgba(255,255,255,.9); color: var(--apple-dark); font-size: 22px; line-height: 1; cursor: pointer; z-index: 2; transition: .2s; }
+        .carousel-btn:hover { background: #fff; transform: translateY(-50%) scale(1.05); }
+        .carousel-btn.prev { left: 14px; }
+        .carousel-btn.next { right: 14px; }
+        .carousel-dots { position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 2; }
+        .dot { width: 10px; height: 10px; border-radius: 50%; border: none; background: rgba(255,255,255,.5); cursor: pointer; padding: 0; }
+        .dot.active { background: #fff; }
+
         /* Nosotros */
         .trust { background: var(--apple-dark); color: #fff; }
         .trust h2 { color: #fff; }
@@ -223,6 +237,8 @@
             .steps { grid-template-columns: repeat(2, 1fr); }
             .btn-nav { font-size: 12px; padding: 6px 12px; }
             section h2, .trust h2 { font-size: 26px; }
+            .slide img { height: 320px; }
+            .carousel-btn { width: 38px; height: 38px; font-size: 18px; }
         }
         @media (max-width: 480px) {
             .steps, .gallery-grid { grid-template-columns: 1fr; }
@@ -255,8 +271,8 @@
 
 <!-- INICIO -->
 <section class="hero" id="inicio">
-    <h1>Diseño y fabricación de Muebles modulares</h1>
-    <p>En <strong>ARKIA911</strong> diseñamos y fabricamos cocinas, closets, muebles de TV y baños modulares con materiales de primera calidad. Medición y diseño 3D <strong>sin costo</strong>, garantía escrita.</p>
+    <h1>Muebles modulares a medida</h1>
+    <p>En <strong>ARKIA911</strong> diseñamos y fabricamos cocinas, closets, muebles de TV y baños modulares con materiales de primera calidad. </p>
     <div class="hero-image-container">
         <img src="img/hero.webp" alt="Sala moderna con mueble de TV modular fabricado por ARKIA911 en Bogotá" class="hero-image" width="1100" height="550" loading="eager">
     </div>
@@ -296,15 +312,19 @@
 <!-- GALERÍA -->
 <section id="galeria">
     <div class="inner">
-        <h2>Galería de proyectos</h2>
-        <p class="section-sub">Trabajos reales que hemos entregado</p>
-        <div class="gallery-grid">
-            <div class="gallery-item"><span class="g-icon">🍳</span><span class="g-label">Cocina integral</span></div>
-            <div class="gallery-item"><span class="g-icon">👗</span><span class="g-label">Closet vestier</span></div>
-            <div class="gallery-item"><span class="g-icon">📺</span><span class="g-label">Mueble de TV</span></div>
-            <div class="gallery-item"><span class="g-icon">🛁</span><span class="g-label">Mueble de baño</span></div>
-            <div class="gallery-item"><span class="g-icon">🛏️</span><span class="g-label">Alcoba principal</span></div>
-            <div class="gallery-item"><span class="g-icon">💼</span><span class="g-label">Oficina en casa</span></div>
+        <h2>Galería</h2>
+                <div class="carousel">
+            <div class="carousel-track">
+                <div class="slide"><img src="img/galeria/foto1.jpg" alt="Cocina integral modular fabricada por ARKIA911"><span class="slide-label">Cocina integral</span></div>
+                <div class="slide"><img src="img/galeria/foto2.jpg" alt="Closet vestier a medida fabricado por ARKIA911"><span class="slide-label">Closet</span></div>
+                <div class="slide"><img src="img/galeria/foto3.jpg" alt="Mueble de TV modular fabricado por ARKIA911"><span class="slide-label">Mueble de TV</span></div>
+                <div class="slide"><img src="img/galeria/foto4.jpg" alt="Mueble de baño fabricado por ARKIA911"><span class="slide-label">Mueble de baño</span></div>
+                <div class="slide"><img src="img/galeria/foto5.jpg" alt="Alcoba principal con cabecera y muebles a medida fabricados por ARKIA911"><span class="slide-label">Alcoba principal</span></div>
+                <div class="slide"><img src="img/galeria/foto6.jpg" alt="Oficina en casa con escritorio y biblioteca fabricados por ARKIA911"><span class="slide-label">Oficina en casa</span></div>
+            </div>
+            <button class="carousel-btn prev" aria-label="Foto anterior">‹</button>
+            <button class="carousel-btn next" aria-label="Foto siguiente">›</button>
+            <div class="carousel-dots"></div>
         </div>
     </div>
 </section>
@@ -379,6 +399,46 @@
             toggle.classList.remove('active');
             toggle.setAttribute('aria-expanded', 'false');
         });
+    });
+
+    // ===== CARRUSEL GALERÍA =====
+    const track = document.querySelector('.carousel-track');
+    const slides = document.querySelectorAll('.slide');
+    const dotsBox = document.querySelector('.carousel-dots');
+    let idx = 0;
+
+    slides.forEach((_, i) => {
+        const b = document.createElement('button');
+        b.className = 'dot' + (i === 0 ? ' active' : '');
+        b.setAttribute('aria-label', 'Ir a la foto ' + (i + 1));
+        b.addEventListener('click', () => go(i));
+        dotsBox.appendChild(b);
+    });
+    const dots = dotsBox.querySelectorAll('.dot');
+
+    function go(i) {
+        idx = (i + slides.length) % slides.length;
+        track.style.transform = 'translateX(-' + (idx * 100) + '%)';
+        dots.forEach((d, j) => d.classList.toggle('active', j === idx));
+    }
+
+    document.querySelector('.carousel-btn.next').addEventListener('click', () => go(idx + 1));
+    document.querySelector('.carousel-btn.prev').addEventListener('click', () => go(idx - 1));
+
+    // Autoplay (se pausa al pasar el mouse)
+    let auto = setInterval(() => go(idx + 1), 5000);
+    const car = document.querySelector('.carousel');
+    car.addEventListener('mouseenter', () => clearInterval(auto));
+    car.addEventListener('mouseleave', () => auto = setInterval(() => go(idx + 1), 5000));
+
+    // Deslizar con el dedo en el celular
+    let x0 = null;
+    car.addEventListener('touchstart', e => x0 = e.touches[0].clientX, { passive: true });
+    car.addEventListener('touchend', e => {
+        if (x0 === null) return;
+        const dx = e.changedTouches[0].clientX - x0;
+        if (Math.abs(dx) > 40) go(idx + (dx < 0 ? 1 : -1));
+        x0 = null;
     });
 </script>
 
