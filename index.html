@@ -12,17 +12,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARKIA911 | Diseño y fabricación de muebles modulares en Bogotá</title>
-    <meta name="description" content="Diseñamos y fabricamos cocinas, closets, muebles de TV y baños modulares a medida.">
-    <meta name="keywords" content="muebles modulares ricaurte, cundinamarca, girardot, Bogotá, cocinas modulares, closets a medida, muebles de TV, muebles de baño, ARKIA911">
+    <meta name="description" content="Diseñamos y fabricamos cocinas, closets, muebles de TV y baños modulares a medida en Bogotá. Medición y diseño 3D sin costo, garantía escrita. ¡Cotiza por WhatsApp!">
+    <meta name="keywords" content="muebles modulares Bogotá, cocinas modulares, closets a medida, muebles de TV, muebles de baño, ARKIA911">
     <meta name="author" content="ARKIA911">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.tudominio.com/">
+    <link rel="canonical" href="https://www.arkia911.com/">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.tudominio.com/">
+    <meta property="og:url" content="https://www.arkia911.com/">
     <meta property="og:title" content="Muebles modulares en Bogotá | ARKIA911">
     <meta property="og:description" content="Diseño y fabricación a medida de cocinas, closets, muebles de TV y baños. Garantía escrita y medición sin costo.">
-    <meta property="og:image" content="https://www.tudominio.com/img/hero.webp">
+    <meta property="og:image" content="https://www.arkia911.com/img/hero.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Muebles modulares en Bogotá | ARKIA911">
@@ -34,8 +34,8 @@
       "@type": "LocalBusiness",
       "name": "ARKIA911",
       "description": "Diseño y fabricación de muebles modulares a medida en Bogotá",
-      "url": "https://www.tudominio.com/",
-      "telephone": "+573001234567",
+      "url": "https://www.arkia911.com/",
+      "telephone": "+573503978400",
       "priceRange": "$$",
       "address": { "@type": "PostalAddress", "addressLocality": "Bogotá", "addressCountry": "CO" },
       "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "18:00" }
@@ -107,7 +107,6 @@
         }
         .btn-nav:hover { background: var(--apple-blue-hover); transform: translateY(-1px); }
 
-        /* Botón hamburguesa (solo móvil) */
         .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; flex-direction: column; gap: 5px; }
         .menu-toggle span { display: block; width: 22px; height: 2px; background: var(--apple-dark); border-radius: 2px; transition: .3s; }
         .menu-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -149,15 +148,7 @@
         .step h3 { margin: 0 0 8px; font-size: 18px; }
         .step p { color: var(--apple-muted); font-size: 14px; }
 
-        /* Galería */
-        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .gallery-item { border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; position: relative; display: grid; place-items: center; background: linear-gradient(135deg, #e8ddd0, #c9b89f); transition: transform .2s ease, box-shadow .2s ease; }
-        .gallery-item:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(0,0,0,.12); }
-        .gallery-item .g-icon { font-size: 55px; }
-        .gallery-item .g-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,.65)); color: #fff; font-weight: 600; font-size: 15px; padding: 30px 15px 12px; text-align: center; }
-        .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-        /* Carrusel */
+        /* Carrusel Galería */
         .carousel { position: relative; max-width: 950px; margin: 0 auto; overflow: hidden; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,.12); }
         .carousel-track { display: flex; transition: transform .5s ease; }
         .slide { min-width: 100%; position: relative; }
@@ -202,6 +193,17 @@
         .footer-logo { height: 48px; width: auto; margin-bottom: 15px; filter: brightness(0) invert(1); }
         footer p { margin: 0; font-size: 14px; }
 
+        /* REDES SOCIALES */
+        .social-links { display: flex; gap: 14px; margin: 18px 0 22px; justify-content: center; }
+        .social-links a {
+            width: 42px; height: 42px; border-radius: 50%;
+            background: rgba(255,255,255,.08); color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            transition: .25s; text-decoration: none;
+        }
+        .social-links a:hover { background: var(--apple-blue); transform: translateY(-3px); }
+        .social-links svg { width: 20px; height: 20px; fill: currentColor; }
+
         /* WhatsApp flotante */
         .float-wa { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp-green); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,.2); text-decoration: none; z-index: 1000; transition: transform .2s ease; }
         .float-wa:hover { transform: scale(1.1); }
@@ -213,7 +215,6 @@
             .hero h1 { font-size: 40px; }
             section h2, .trust h2 { font-size: 30px; }
             .menu { gap: 16px; }
-            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 768px) {
             .menu-toggle { display: flex; }
@@ -241,7 +242,7 @@
             .carousel-btn { width: 38px; height: 38px; font-size: 18px; }
         }
         @media (max-width: 480px) {
-            .steps, .gallery-grid { grid-template-columns: 1fr; }
+            .steps { grid-template-columns: 1fr; }
             .cta-main { padding: 14px 28px; font-size: 16px; }
         }
     </style>
@@ -272,9 +273,9 @@
 <!-- INICIO -->
 <section class="hero" id="inicio">
     <h1>Muebles modulares a medida</h1>
-    <p>En <strong>ARKIA911</strong> diseñamos y fabricamos cocinas, closets, muebles de TV y baños modulares con materiales de primera calidad. </p>
+    <p>En <strong>ARKIA911</strong> diseñamos y fabricamos cocinas, closets, muebles de TV y baños modulares con materiales de primera calidad.</p>
     <div class="hero-image-container">
-        <img src="img/hero.webp" alt="Sala moderna con mueble de TV modular fabricado por ARKIA911 en Bogotá" class="hero-image" width="1100" height="550" loading="eager">
+        <img src="img/hero.webp" alt="Taller de carpintería de ARKIA911 con mesa de sierra e inventario de melamina en Bogotá" class="hero-image" width="1100" height="550" loading="eager">
     </div>
     <a href="https://wa.me/573503978400?text=Hola%20ARKIA,%20quisiera%20cotizar%20un%20mueble%20modular" class="cta-main">Cotizar mi proyecto por WhatsApp</a>
 </section>
@@ -312,8 +313,9 @@
 <!-- GALERÍA -->
 <section id="galeria">
     <div class="inner">
-        <h2>Galería</h2>
-                <div class="carousel">
+        <h2>Galería de proyectos</h2>
+        <p class="section-sub">Trabajos reales que hemos entregado</p>
+        <div class="carousel">
             <div class="carousel-track">
                 <div class="slide"><img src="img/galeria/foto1.jpg" alt="Cocina integral modular fabricada por ARKIA911"><span class="slide-label">Cocina integral</span></div>
                 <div class="slide"><img src="img/galeria/foto2.jpg" alt="Closet vestier a medida fabricado por ARKIA911"><span class="slide-label">Closet</span></div>
@@ -321,8 +323,8 @@
                 <div class="slide"><img src="img/galeria/foto4.jpg" alt="Mueble de baño fabricado por ARKIA911"><span class="slide-label">Mueble de baño</span></div>
                 <div class="slide"><img src="img/galeria/foto5.jpg" alt="Alcoba principal con cabecera y muebles a medida fabricados por ARKIA911"><span class="slide-label">Alcoba principal</span></div>
                 <div class="slide"><img src="img/galeria/foto6.jpg" alt="Oficina en casa con escritorio y biblioteca fabricados por ARKIA911"><span class="slide-label">Oficina en casa</span></div>
-                <div class="slide"><img src="img/galeria/foto7.jpg" alt="Comedor con mesa en roble y patas metálicas fabricado por ARKIA911"><span class="slide-label">Cocina Comedor</span></div>
-                <div class="slide"><img src="img/galeria/foto8.jpg" alt="Cocina con comedor integrado e isla en roble fabricada por ARKIA911"><span class="slide-label">Comedor</span></div>
+                <div class="slide"><img src="img/galeria/foto7.jpg" alt="Cocina con comedor integrado fabricada por ARKIA911"><span class="slide-label">Cocina Comedor</span></div>
+                <div class="slide"><img src="img/galeria/foto8.jpg" alt="Comedor con mesa en roble fabricado por ARKIA911"><span class="slide-label">Comedor</span></div>
             </div>
             <button class="carousel-btn prev" aria-label="Foto anterior">‹</button>
             <button class="carousel-btn next" aria-label="Foto siguiente">›</button>
@@ -363,13 +365,13 @@
         <h2>Contacto</h2>
         <p class="section-sub">Estamos listos para atenderte</p>
         <div class="contact-grid">
-            <div class="contact-card"><div class="c-icon">💬</div><h3>WhatsApp</h3><p><a href="https://wa.me/573503978400" target="_blank" rel="noopener">+573503978400</a></p></div>
+            <div class="contact-card"><div class="c-icon">💬</div><h3>WhatsApp</h3><p><a href="https://wa.me/573503978400" target="_blank" rel="noopener">+57 350 397 8400</a></p></div>
             <div class="contact-card"><div class="c-icon">📧</div><h3>Correo</h3><p><a href="mailto:info@arkia911.com">info@arkia911.com</a></p></div>
             <div class="contact-card"><div class="c-icon">📍</div><h3>Ubicación</h3><p>Bogotá, Colombia</p></div>
             <div class="contact-card"><div class="c-icon">🕒</div><h3>Horario</h3><p>Lun a Sáb, 8:00 am – 6:00 pm</p></div>
         </div>
         <div class="contact-cta">
-            <a href="https://wa.me/573001234567?text=Hola%20ARKIA,%20quiero%20cotizar%20un%20mueble" class="cta-main">Cotizar mi proyecto</a>
+            <a href="https://wa.me/573503978400?text=Hola%20ARKIA,%20quiero%20cotizar%20un%20mueble" class="cta-main">Cotizar mi proyecto</a>
         </div>
     </div>
 </section>
@@ -377,11 +379,25 @@
 <footer>
     <div class="footer-content">
         <img src="img/logo.svg" alt="ARKIA911" class="footer-logo">
+        
+        <!-- ÍCONOS DE REDES SOCIALES -->
+        <div class="social-links">
+            <a href="https://www.facebook.com/TU_PAGINA" target="_blank" rel="noopener noreferrer" aria-label="Facebook de ARKIA911">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" aria-label="Instagram de ARKIA911">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163C8.741 0 8.332.014 7.052.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@TU_USUARIO" target="_blank" rel="noopener noreferrer" aria-label="TikTok de ARKIA911">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.79-1.58.52-.81.73-1.79.74-2.76.02-3.16 0-6.32.01-9.48z"/></svg>
+            </a>
+        </div>
+
         <p>© 2026 ARKIA911 · Mobiliario a medida en Bogotá, Colombia</p>
     </div>
 </footer>
 
-<a href="https://wa.me/573001234567" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="Cotizar por WhatsApp">
+<a href="https://wa.me/573503978400" class="float-wa" target="_blank" rel="noopener noreferrer" aria-label="Cotizar por WhatsApp">
     <svg width="35" height="35" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
         <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.380-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-1.42.167-.94.167-1.745.118-1.912-.049-.17-.183-.248-.38-.347z"/>
     </svg>
@@ -427,13 +443,11 @@
     document.querySelector('.carousel-btn.next').addEventListener('click', () => go(idx + 1));
     document.querySelector('.carousel-btn.prev').addEventListener('click', () => go(idx - 1));
 
-    // Autoplay (se pausa al pasar el mouse)
     let auto = setInterval(() => go(idx + 1), 5000);
     const car = document.querySelector('.carousel');
     car.addEventListener('mouseenter', () => clearInterval(auto));
     car.addEventListener('mouseleave', () => auto = setInterval(() => go(idx + 1), 5000));
 
-    // Deslizar con el dedo en el celular
     let x0 = null;
     car.addEventListener('touchstart', e => x0 = e.touches[0].clientX, { passive: true });
     car.addEventListener('touchend', e => {
